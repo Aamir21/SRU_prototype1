@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.seg1{
+    height: 120px;
+    background-color: rgb(228, 37, 37);
+    
+}
+
+
+
+.logo{
+    width: 60%;
+    height: 90%;
+    background-color:transparent;
+    background-image: url("logo112.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.seg1 i{
+    display: none;
+}
+
+
+.seg1_2{
+    height: 120px;
+    background-color: rgb(228, 37, 37);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.mail_info{
+    width: 80%;
+    height: 55px;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+
+}
+
+.mail_info p{
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+}
+
+
+
+.seg1_2 ul{
+    width: 100%;
+    align-self: center;
+    background-color: transparent;
+    margin-top: 12px;
+
+}
+
+.seg1_2 ul li{
+    float: left;
+    
+    margin-left: 5%;
+    list-style-type: none;
+    font-family: Poppins;
+    color: whitesmoke;
+
+}
+
+.seg1_3{
+    height: 120px;
+    background-color: rgb(228, 37, 37);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.seg1_3 button{
+    width: 150px;
+    height: 40px;
+    border: solid thin whitesmoke;
+    border-radius: 5px;
+    color:rgb(228, 37, 37) ;
+    background:linear-gradient(90deg, whitesmoke, white);
+    font-family: Raleway;
+    align-self:center;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px rgb(155, 23, 23);
+
+}
+
+
+.seg2{
+    height: 600px;
+    background-color: whitesmoke;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+video{
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10;
+}
+
+
+
+.seg3{
+    height: 180px;
+    background:whitesmoke;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.block1{
+    height: 150px;
+    background: white;
+    border: solid thin transparent;
+    border-radius: 18px;
+    box-shadow: 0px 8px 40px lightgray;
+    position: absolute;
+    top: -22%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    
+    
+
+}
+
+.block1 h1{
+    font-family: Poppins;
+    font-weight: bold;
+    align-self: center;
+    color: rgb(228, 37, 37);
+}
+
+.block1 button{
+    width: 160px;
+    height: 42px;
+    border: solid thin transparent;
+    border-radius: 8px;
+    align-self: center;
+    margin-left: 5%;
+    color: white;
+    background: linear-gradient(90deg, rgb(228, 37, 37),rgb(185, 31, 31));
+    font-family: Raleway;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px rgb(148, 29, 29);
+
+}
+
+.seg3_2{
+    height: 300px;
+    background: whitesmoke;
+    display: flex;
+}
+
+
+
+.seg3_2 p{
+    font-family: Poppins;
+    font-size: 20px;
+    
+}
+
+.seg3_2 h1{
+    font-family: Raleway;
+    font-weight: bolder;
+    color: rgb(228, 37, 37);
+    position: absolute;
+    margin-top:30px; 
+}
+
+.seg3_3{
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+.seg3_3 div{
+    width: auto;
+    height: 150px;
+    background-color:transparent;
+    float: left;
+    margin-left: 10%;
+    
+
+}
+
+.seg3_3 div p{
+    color:gainsboro;
+    font-family: Raleway;
+    font-size: 90px;
+    font-weight: bold;
+
+}
+.seg3_3 div label{
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+
+
+
+.seg4{
+    height: 480px;
+    background:whitesmoke;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sub_block{
+    height: 420px;
+    width: 90%;
+    background: whitesmoke;
+    border: solid thin transparent;
+    
+    background-image: url("Capture1.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.seg4_2{
+    height: 480px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.seg4_2 h2{
+    color:rgb(228, 37, 37) ;
+    font-family: Raleway;
+    font-weight: bold;
+    position: absolute;
+}
+
+.seg4_2 ul{
+    margin-top: 30px;
+}
+
+.seg4_2 ul li{
+    list-style-type: none;
+    margin-top: 21px;
+    font-family: Poppins;
+    font-size: 18px;
+
+    
+}
+
+.seg4_2 ul li i{
+    font-size: 32px;
+    line-height: center;
+    padding: 0px;
+    background-attachment:fixed;
+    background: linear-gradient(90deg, rgb(228, 37, 37), rgb(185, 31, 31)) no-repeat;
+                    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.seg5{
+    height: 700px;
+    background: whitesmoke;
+    
+
+}
+
+.seg5 div{
+    height: 310px;
+    background-color: white;
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 6%;
+    border: solid thin transparent;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px gainsboro;
+    display: flex;
+    justify-content: center;
+    background-image: url("Engineering.svg");
+    background-repeat: no-repeat;
+    border-bottom: solid 3px rgb(228, 37, 37);
+    background-size: contain ;
+
+}
+
+.seg5 div h3{
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0%;
+    padding-top: 12px;
+    
+}
+
+.seg6{
+    height: 500px;
+    background-color: whitesmoke;
+    
+
+
+}
+
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 33%;
+  height: 300px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell:nth-child(1){
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-cell:nth-child(2){
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-cell:nth-child(3){
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-cell:nth-child(4){
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-cell:nth-child(5){
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-cell:nth-child(6){
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.seg7{
+    height: 350px;
+    background-color: whitesmoke;
+    display: flex;
+
+}
+
+
+.seg8{
+    height: 350px;
+    background-color: rgb(228, 37, 37);
+
+
+}
+
+.seg8 i{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.seg8_2{
+    height: 350px;
+    background-color: rgb(228, 37, 37);
+    
+
+}
+.seg8_2 h2{
+    font-family: Poppins;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.seg8_2 ul li{
+    list-style-type: none;
+    font-family: Raleway;
+    font-weight: bold;
+    margin-top: 12px;
+
+}
+.seg8_2 ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.seg8_3{
+    height: 350px;
+    background-color: rgb(228, 37, 37);
+    
+
+}
+
+.seg8_3 h2{
+    font-family: Poppins;
+    color: white;
+    margin-top: 20px;
+
+}
+.seg8_3 ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.seg8_3 ul li{
+    list-style-type: none;
+    font-family: Raleway;
+    font-weight: bold;
+    margin-top: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Mobile View*/
+
+@media only screen and (max-width: 600px){
+
+
+    
+    .seg1{
+        position: absolute;
+        z-index: 3;
+    }
+
+    .seg1 i{
+        display: block;
+        position: absolute;
+        right: 10px;
+        z-index: 5;
+        top: 10px;
+        font-size: 35px;
+        color: wheat;
+    }
+
+    .seg1_2{
+        background: linear-gradient(60deg,rgb(228, 37, 37), rgb(185, 31, 31));
+        height: 0px;
+    }
+
+
+    .seg1_2 ul{
+        width: 98%;
+        margin-top: 22%;
+        background-color:transparent;
+        margin-left: 0%;
+        padding-left: 0%;
+        
+    }
+
+    .seg1_2 ul a li{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        font-size: 35px;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+
+
+    .mail_info{
+        display: none;
+    }
+
+    .seg2{
+        height: 200px;
+
+    }
+
+    .seg3_2{
+        margin-top: 100px;
+    }
+
+    .seg3_2 p{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .seg3_2 h1{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .block1 button{
+        position: absolute;
+        width: 100%;
+        margin-left: 0%;
+        top: 170px;
+        height: 43%;
+        font-size: 130%;
+    }
+
+
+    .seg3_3 div{
+        width: 50%;
+        height:50%;
+        background-color: transparent;
+        margin-left: 0%;
+    }
+
+    .seg3_3 div p{
+        font-size: 270%;
+        text-align: center;
+
+
+    }
+
+    .seg3_3 div label{
+        padding-left: 10%;
+    }
+
+
+    .seg4{
+        height: 270px;
+    }
+
+
+
+    .seg5 div{
+
+        margin-left: 0%;
+        height: 170px;
+        width: 50%;
+        box-shadow: 0px 0px 0px transparent;
+        border: solid thin gainsboro;
+
+    }
+
+    .seg5 div h3{
+        width: 100%;
+        height: 30%;
+        font-size: 90%;
+        text-align: center;
+        padding-top: 8%;
+    }
+
+
+    /*flickity*/
+
+    .carousel-cell {
+        width: 100%;
+        height: 300px;
+        
+      }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
