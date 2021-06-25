@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="index.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!--<link rel="stylesheet" href="style.css"> -->
 
 
@@ -66,12 +71,28 @@
              
             });
 
-
-
-
+            
+            
+            
 
 
         });
+
+
+
+
+        $(document).ready(function(){
+
+            ("#headtext").text("Covid Free Campus")
+            
+
+
+        });
+
+
+
+
+
 
 
     </script>
@@ -101,18 +122,43 @@
                 </div>
 
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Academic</li></a>
-                    <a href="#"><li>Brochure</li></a>
-                    <a href="#"><li>Contacts</li></a>
-                    <a href="#"><li>About</li></a>
+                    <a href="#"></a><li class="menu">Home
+                        <ul>
+                            <a href="#"><li>Ambition1</li></a>
+                            <a href="#"><li>Ambition2</li></a>
+                            <a href="#"><li>Ambition3</li></a>
+                        </ul>
+                    </li>
+                    <a href="#"></a><li class="menu">Academic
+
+                        <ul>
+                            <a href="#"><li>Academ1</li></a>
+                            <a href="#"><li>Academ2</li></a>
+                            <a href="#"><li>Academ3</li></a>
+                        </ul>
+
+                    </li>
+                    <a href="#"></a><li class="menu">Brochure
+
+                        <ul>
+                            <a href="#"><li>Broc1</li></a>
+                            <a href="#"><li>Broc2</li></a>
+                            <a href="#"><li>Broc3</li></a>
+                            <a href="#"><li>Broc4</li></a>
+                            <a href="#"><li>Broc5</li></a>
+                            <a href="#"><li>Broc6</li></a>
+                        </ul>
+
+                    </li>
+                    <a href="#"><li class="menu">About</li></a>
+                    <a href="#"><li class="menu">Contacts</li></a>
                 </ul>
 
             </div>
 
             <div class="col-md-2 seg1_3">
 
-                <button>Enquiry</button>
+                <button id="enq">Enquiry</button>
                 
 
             </div>
@@ -122,8 +168,11 @@
         <div class="row">                       <!--Roww2-->
 
             <div class="col-md-12 seg2">
-                
+                <h1 class="animate__animated animate__bounceInRight animate__delay-0.2s">SRU, Raipur</h1>
+                <h2 class="animate__animated animate__flipInX animate__delay-3s">Best University in C.G</h2>
+
                 <video width= "100%" autoplay loop muted>
+
                     <source src="explore2.mp4">
                 </video>
 
@@ -136,7 +185,8 @@
             <div class="col-md-12 seg3">
 
                 <div class="col-md-6 block1">
-                    <h1>Worlds WorkOn</h1>
+                    <h1 id="headtext">Covid Free Campus</h1>
+                   
                     
                     <button>Apply Now</button>
                 </div>
@@ -233,15 +283,18 @@
 
                 <h1>Eminent Visitors</h1>
 
-                <div class="main-carousel" data-flickity='{"cellAlign": "left", "contain": true  }'>
-                    <div class="carousel-cell">...</div>
-                    <div class="carousel-cell">...</div>
-                    <div class="carousel-cell is-initial-select">...</div>
-                    <div class="carousel-cell">...</div>
-                    <div class="carousel-cell">...</div>
-                    <div class="carousel-cell">...</div>
+                
+                <div class="main-carousel" data-flickity='{"cellAlign": "left", "contain": true, "freeScroll":true }'>
+                    <div class="carousel-cell">...1</div>
+                    <div class="carousel-cell">...2</div>
+                    <div class="carousel-cell">...3</div>
+                    <div class="carousel-cell">...4</div>
+                    <div class="carousel-cell">...5</div>
+                    <div class="carousel-cell">...6</div>
                     
                 </div>
+
+            
 
             </div>
             
@@ -250,24 +303,87 @@
 
         <div class="row">                   <!--Row7-->
 
-            <div class="col-md-12 seg7">
+            <div class="col-md-7 seg7">
 
-
+                <h1>Vision and Mission</h1>
+                <blockquote>
+                    Our objective is to promote better educational environment to cast the student for Business leaders and technocrats!This history of this vision started back in early 2000. It started with a great inspiration and eagerness towards serving the nation.<br>
+                    We got all sorts of equipments for practical understanding and we ensure the affordability of each and ever student studying in our institution.
+                </blockquote>
 
             </div>
 
-           
+            <div class="col-md-5 seg7_2">
+                <img src="maharaj3.png">
+
+                <h3>Shri Ravi Shankar Maharaj Ji</h3>
+                <h5>Chairman</h5>
+                
+            </div>
+
+
 
         </div>
+
+        <div class="row">                   <!--Row7 ADDITIONAL-->
+
+            <div class="col-md-3 seg7_additional">
+                <h4>XYZ</h4>
+                <p>Designation1</p>
+
+            </div>
+            <div class="col-md-3 seg7_additional">
+                <h4>XYZ</h4>
+                <p>Designation2</p>
+            </div>
+            <div class="col-md-3 seg7_additional">
+                <h4>XYZ</h4>
+                <p>Designation3</p>
+            </div>
+            <div class="col-md-3 seg7_additional">
+                <h4>XYZ</h4>
+                <p>Designation4</p>
+            </div>
+
+        </div>
+
+        <div class="row">                   <!--Row7 EXTENDED--->
+
+            <div class="col-md-12 seg7_extended">
+                <h1>Upcoming EVENTS</h1>
+                <hr>
+
+                <div class="carousel" data-flickity='{"cellAlign": "left", "contain": true, "pageDots":false, "prevNextButtons":false }'>
+                    <div class="carousel-cell"><h2>Aug 13 <label>Labour day</label></h2><img src="scene2.svg"></div>
+                    <div class="carousel-cell"><h2>Aug 14 <label>Labour day</label></h2><img></div>
+                    <div class="carousel-cell"><h2>Aug 15 <label>Independence Day</label></h2><img></div>
+                    <div class="carousel-cell"><h2>Aug 16 <label>Routine Day</label></h2><img></div>
+                    <div class="carousel-cell"><h2>Aug 17 <label>Labour day</label></h2><img></div>
+                    <div class="carousel-cell"><h2>Aug 18 <label>Labour day</label></h2><img></div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
 
         <div class="row">                   <!--Row8-->
 
             <div class="col-md-4 seg8">
 
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-youtube-play"></i>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+
+                <div class="col-md-7 address_block">
+
+                    <i class="fa fa-map-marker"><p>26A, Railway Road</p></i>
+                    <i class="fa fa-home"><p>R block ,Bangalore</p></i>
+                    <i class="fa fa-mobile"><p>45465454</p></i>
+
+                </div>
 
 
 
@@ -301,6 +417,14 @@
                 
             </div>
 
+
+        </div>
+
+        <div class="row">                           <!--Row9-->
+
+            <div class="col-md-9 seg9"></div>
+
+            <div class="col-md-3 seg9_2"></div>
 
         </div>
 

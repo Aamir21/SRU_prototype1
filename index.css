@@ -13,13 +13,13 @@
 
 
 .logo{
-    width: 60%;
+    width: 100%;
     height: 90%;
-    background-color:transparent;
-    background-image: url("logo112.png");
-    background-size: 40%;
+    margin-top: 20px;
+    background-image: url("logo_b.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 8px;
+    
 }
 
 .seg1 i{
@@ -75,6 +75,53 @@
 
 }
 
+.seg1_2 ul li:hover{
+    cursor: pointer;
+}
+
+
+.seg1_2 ul li ul{
+    display: none;
+
+}
+
+.seg1_2 ul li:hover > ul{
+    display: inline-block;
+    position: absolute;
+    z-index: 6;
+    width: auto;
+    height: 200px;
+    background-color:rgb(194, 26, 26) ;
+    margin-left: -50px;
+    margin-top: 25px;
+    
+    border-radius: 5px;
+}
+.seg1_2 ul li:hover > ul li{
+
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: transparent;
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-top: 3px;
+    padding-top:5px;
+    color:white;
+    transition: all 0.4s ease;
+    
+}
+
+.seg1_2 ul li:hover > ul li:hover{
+    background:linear-gradient(90deg, gold, rgb(255, 153, 0)); 
+    color: black;
+    transition: all 0.4s ease;
+}
+
+
+
+
+
 .seg1_3{
     height: 120px;
     background-color: rgb(228, 37, 37);
@@ -114,6 +161,31 @@ video{
     top: -10;
 }
 
+.seg2 h1{
+    position: absolute;
+    z-index: 6;
+    font-family: Raleway;
+    font-size: 45px;
+    font-weight: bold;
+    width: auto;
+    height: 80px;
+    background: white;
+    top:30%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.seg2 h2{
+    width: auto;
+    height: 45px;
+    background:linear-gradient(90deg, gold, rgb(255, 153, 0));
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    z-index: 7;
+    top: 40%;
+
+}
 
 
 .seg3{
@@ -144,7 +216,12 @@ video{
     font-family: Poppins;
     font-weight: bold;
     align-self: center;
-    color: rgb(228, 37, 37);
+    background-attachment:fixed;
+    background: linear-gradient(90deg, orange, gold) no-repeat;
+                    
+                
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .block1 button{
@@ -155,10 +232,18 @@ video{
     align-self: center;
     margin-left: 5%;
     color: white;
+    border: solid thin #f43837;
+    transition: all 0.6s ease;
     background: linear-gradient(90deg, rgb(228, 37, 37),rgb(185, 31, 31));
     font-family: Raleway;
     font-weight: bold;
-    box-shadow: 0px 0px 1px rgb(148, 29, 29);
+    box-shadow: 0px 0px 2px #f43837;
+
+}
+
+.block1 button:hover{
+    box-shadow: 0px 8px 35px #f43837;
+    transition: all 0.6s ease;
 
 }
 
@@ -273,7 +358,7 @@ video{
 }
 
 .seg5{
-    height: 700px;
+    height: 900px;
     background: whitesmoke;
     
 
@@ -284,7 +369,7 @@ video{
     background-color: white;
     margin-left: 20px;
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 6%;
     border: solid thin transparent;
     border-radius: 5px;
@@ -300,15 +385,21 @@ video{
 
 .seg5 div h3{
     font-family: Poppins;
-    font-weight: bold;
+    
     color: rgb(26, 26, 26);
     width: 100%;
-    height: 25%;
-    background-color: transparent;
+    height: 21.5%;
+    background:linear-gradient(90deg, gold, rgb(255, 174, 0));
+    border: solid thin gold;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     padding-bottom: 0%;
-    padding-top: 12px;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 23px;
+    
     
 }
 
@@ -318,6 +409,11 @@ video{
     
 
 
+}
+
+.seg6 h1{
+    font-family: Raleway;
+    color:rgb(228, 37, 37) ;
 }
 
 
@@ -339,18 +435,43 @@ body { font-family: sans-serif; }
   margin-right: 10px;
   background: #8C8;
   border-radius: 5px;
-  counter-increment: carousel-cell;
+  /*counter-increment: carousel-cell;*/
+  
 }
 
+.carousel-cell h2{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, gold, rgb(255, 174, 0));
+    bottom: -10px;
+    padding-left: 10px;
+    font-family: Poppins;
+   
+}
+
+.carousel-cell h2 label{
+   
+    width: auto;
+    height: 50px;
+    background: transparent;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
 .carousel-cell.is-selected {
-  background: #ED2;
+  background:rgb(228, 37, 37);
 }
 
 /* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(carousel-cell);
+  /*content: counter(carousel-cell);*/
   line-height: 200px;
   font-size: 80px;
   color: white;
@@ -390,11 +511,98 @@ body { font-family: sans-serif; }
 
 
 .seg7{
-    height: 350px;
+    height: 500px;
     background-color: whitesmoke;
     display: flex;
+    background-image: url("dots2.svg");
+    background-repeat: no-repeat;
 
 }
+.seg7 h1{
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(228, 37, 37);
+}
+.seg7 blockquote{
+    position: absolute;
+    margin-top: 150px;
+    font-family: Raleway;
+    font-weight: bold;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.seg7_2{
+    height: 500px;
+   
+    background: whitesmoke;
+    background-image: url("dots1.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.seg7_2 img{
+    width: 70%;
+    height: auto;
+}
+
+.seg7_2 h3{
+    margin-top: 40px;
+    color: rgb(17, 17, 17);
+    font-family: Poppins;
+}
+.seg7_2 h5{
+    font-family: Raleway;
+    color: gray;
+    text-align: center;
+    margin-left: -150px;
+    font-weight: bold;
+}
+
+
+.seg7_additional{
+    height: 350px;
+    background: gainsboro;
+    background-image: url("avtar1.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+.seg7_additional h4{
+    position: absolute;
+    top: 72%;
+    font-family: Poppins;
+}
+.seg7_additional p{
+    position: absolute;
+    top: 81%;
+    font-family: Raleway;
+    color: gray;
+}
+
+.seg7_extended{
+    height: 550px;
+    background: gainsboro;
+
+}
+
+.seg7_extended h1{
+    width: 30%;
+    height: 58px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background:linear-gradient(90deg,rgb(228, 37, 37),rgb(185, 31, 31) ) ;
+    box-shadow: 0px 0px 3px gray;
+    font-family: Raleway;
+    color:white;
+}
+
+
+
+
+
 
 
 .seg8{
@@ -411,6 +619,27 @@ body { font-family: sans-serif; }
     color: white;
 
 }
+
+.address_block{
+    height: 200px;
+    background-color:transparent;
+    margin-top: 30px;
+}
+
+.address_block i{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.address_block i p{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 0px;
+}
+
+
+
 
 .seg8_2{
     height: 350px;
@@ -465,13 +694,35 @@ body { font-family: sans-serif; }
 
 }
 
+.seg9{
+    height: 150px;
+    background-color: rgb(228, 37, 37);
+
+
+}
+
+.seg9_2{
+    height: 150px;
+    background-color: rgb(228, 37, 37);
+    background-image: url("logo_b.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
 
 
 
 
 
 
-
+/*Animation Keyframes*/
+.animate__animated.animate__bounceInRight {
+    --animate-duration: 3s;
+}
+.animate__animated.animate__bounceInRight {
+    --animate-duration: 1s;
+    
+}
 
 
 /*Mobile View*/
@@ -510,14 +761,42 @@ body { font-family: sans-serif; }
         
     }
 
-    .seg1_2 ul a li{
+    .seg1_2 ul li{
         width: 100%;
         height: 60px;
-        text-align: center;
-        font-size: 35px;
+        text-align: right;
+        font-size: 32px;
         margin-left: 0%;
         padding-left: 0%;
     }
+
+    .seg1_2 ul li:focus-within{
+        color: gold;
+    }
+    
+
+
+    .seg1_2 ul li:hover > ul{
+        display: block;
+        position: relative;
+       
+        width: 50%;
+        height: 200px;
+        background-color: yellowgreen;
+        margin-left: 0%;
+    
+    }
+
+    .seg1_2 ul li:hover > ul li{
+        height: 35px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
 
 
     .mail_info{
@@ -595,6 +874,13 @@ body { font-family: sans-serif; }
         text-align: center;
         padding-top: 8%;
     }
+
+
+    .seg7_additional{
+        border: solid thin black;
+        height: 150px;
+    }
+    
 
 
     /*flickity*/
